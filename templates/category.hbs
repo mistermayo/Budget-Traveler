@@ -33,8 +33,8 @@
     {{#each item in items itemController="item"}}
     <p>
       {{#link-to 'item' item}}
-      address: {{item.name}}<br />
-      subject: {{item.cost}}
+      name: {{item.name}}<br />
+      ${{item.cost}}
       {{/link-to}}
     </p>
 

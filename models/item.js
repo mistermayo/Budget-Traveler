@@ -1,4 +1,4 @@
-Budget.item = DS.Model.extend({
+Budget.Item = DS.Model.extend({
   name: DS.attr(),
   location: DS.attr(),
   cost: DS.attr(),
