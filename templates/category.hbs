@@ -1,14 +1,17 @@
-<h1>{{name}}</h1>
+<h2>{{name}}</h2>
 
 {{#if isEditing}}
   <div class="form-div">
     <form>
+
       <div class="form-control">
         <label class for="name">Category Name</label>
         {{input value=name id="name" class="form-control"}}
       </div>
+
     </form>
   </div>
+
     <div class="button-div">
       <button class="btn btn-success" {{action 'save'}}>Save</button>
     </div>
@@ -28,20 +31,20 @@
 </div>
 
 
-<div class="col-md-4">
   <h2>Budget spots in this category</h2>
     {{#each item in items itemController="item"}}
-    <p>
+    <ul id="item">
       {{#link-to 'item' item}}
-      name: {{item.name}}<br />
-      ${{item.cost}}
+        <div id="name">
+        name: {{item.name}}<br />
+        ${{item.cost}}
+        </div>
       {{/link-to}}
-    </p>
+    </ul>
 
     {{/each}}
 
     <p>{{#link-to 'new-item' this class="btn btn-success"}}Create New budget spot{{/link-to}}</p>
-</div>
 
 <div class="col-md-8">
 

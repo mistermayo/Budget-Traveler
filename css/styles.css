@@ -1,9 +1,10 @@
 body {
-  /*font-family: 'Lobster', cursive;
-  background-color: #8EBB7E;*/
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #00A38D;
+  background: url("https://edelwilliamslifetimes.files.wordpress.com/2014/06/island-pic.jpg");*/
 }
 
-/*.top {
+.top {
   text-align: center;
   color: #D4AF37;
   font-size: 500%;
@@ -23,14 +24,29 @@ li a {
 }
 
 .navbar {
-  background-color: #FF9C58;
+  background-color: #949998;
 }
 
 h1 {
-  color: #000;
-  text-align: center;
+  color: #FBA70D;
+  text-align: auto;
 }
 
 h2, h3, h4 {
-  color: #000;
-}*/
+  color: #F166EF;
+}
+
+.container-fluid
+ {
+   text-align: center;
+   display: block;
+ }
+
+
+#suitcase {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+ul #item, #name {
+  color: black;
+}
