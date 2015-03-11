@@ -1,0 +1,1 @@
+Budget = Ember.Application.create();
