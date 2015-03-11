@@ -1,0 +1,9 @@
+<h1>Categories</h1>
+
+<ul>
+  {{#each category in model}}
+    <li>{{#link-to 'category' category}}{{category.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'new-category' classNames="btn btn-primary"}}New Category{{/link-to}}

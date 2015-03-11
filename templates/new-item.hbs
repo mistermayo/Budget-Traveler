@@ -1,0 +1,16 @@
+<h2>Add a new budget spot!</h2>
+
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    {{input value=name id="name" class="form-control" autofocus="autofocus"}}
+    <label for="cost">Cost:</label>
+    {{input value=cost id="cost" class="form-control"}}
+    <label for="location">Location:</label>
+    {{input value=location id="location" class="form-control"}}
+    <label for="body">Write a description:</label>
+    {{textarea value=body id="body" class="form-control" rows="5"}}
+  </div>
+
+  <button class="btn btn-primary" {{action "save"}}>Save this budget spot!</button>
+</form>

@@ -1,0 +1,18 @@
+<h4>{{name}} <br />
+     ${{cost}} <br />
+     {{location}}
+
+</h4>
+
+<div class="col-md-6">
+  <ul>
+    <li>{{body}}</li>
+  </ul>
+</div>
+<div>
+  <br />
+
+  <button classNames="btn btn-warning" {{action 'delete'}}>Delete spot</button>
+
+  {{#link-to 'category' category classNames="btn btn-warning"}}Go Back{{/link-to}}
+</div>
