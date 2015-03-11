@@ -1,0 +1,9 @@
+<h1>Countries</h1>
+
+<ul>
+  {{#each country in model}}
+    <li>{{#link-to 'country' country}}{{country.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'new-country' classNames="btn btn-primary"}}New Country{{/link-to}}

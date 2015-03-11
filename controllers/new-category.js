@@ -1,13 +1,15 @@
-Budget.NewCategoryController = Ember.Controller.extend({
+Budget.NewCategoryController = Ember.ObjectController.extend({
   actions: {
     save: function() {
-      var newCategory = this.store.createRecord('category', {
-        name: this.get('name')
+      var category = this.get('model');
+      category.save();
+      // controller.transitionToRoute('categories', categorie);
+
+      var controller = this;
+      category.get('country').then(function(country) {
+        country.save();
+        controller.transitionToRoute('country', country);
       });
-      newCategory.save();
-      this.transitionToRoute('categories');
-      this.set("name", null);
-      this.set("category", null);
     }
   }
 });

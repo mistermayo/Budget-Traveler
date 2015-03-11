@@ -1,0 +1,39 @@
+<h2>{{name}}</h2>
+
+{{#if isEditing}}
+  <div class="form-div">
+    <form>
+
+      <div class="form-control">
+        <label class for="name">Country Name</label>
+        {{input value=name id="name" class="form-control"}}
+      </div>
+
+    </form>
+  </div>
+<br>
+<br>
+<div class="button-div">
+  <button class="btn btn-success" {{action 'save'}}>Save</button>
+</div>
+
+{{else}}
+
+  <p>{{name}}</p>
+
+  <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+  <button class="btn btn-sm btn-danger" {{action 'delete'}}>Delete Country</button>
+
+{{/if}}
+
+<div>
+  <br />
+  {{#link-to 'countries' classNames="btn btn-warning"}}See list of Countries{{/link-to}}
+</div>
+
+{{#link-to 'categories' class="btn btn-success"}}Check out the categories{{/link-to}}
+
+
+{{#link-to 'new-category' classNames="btn btn-primary"}}New Category{{/link-to}}
+
+{{outlet}}

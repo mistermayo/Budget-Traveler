@@ -1,12 +1,13 @@
-<h3>My name is Tucker Mayo, and I'm a student at Epicodus.</h3>
-    <ul class="about">
-      <li>This is an Ember app that I built on March 6, 2015. <br />
-        It's a a budget traveler app that lets you create and search< br/>
-        budget offerings while travelling.</li>
-    </ul>
-
+<h3><strong>My name is Tucker Mayo.</strong></h3>
+  <ul class="about">
+    <li><strong>This is an Ember app that I built on March 6, 2015 <br />
+      at Epicodus. It's a a budget traveler app that lets you <br />
+      create and search budget offerings while travelling.</strong>
+    </li>
+  </ul>
     {{#if isAboutShowing}}
       <button class="btn btn-info" {{action 'hideAbout'}}>Hide photo :(</button>
+
       <p><img src="css/monkey.jpg"></p>
 
     {{else}}
@@ -18,5 +19,6 @@
   <br />
 
   {{#link-to 'categories' classNames="btn btn-warning"}}See list of Categories{{/link-to}}
+  {{#link-to 'countries' classNames="btn btn-warning"}}See list of Countries{{/link-to}}
 
 </div>

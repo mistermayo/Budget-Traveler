@@ -1,9 +1,10 @@
 <h1>Categories</h1>
+{{name}}
+{{#each category in model}}
 
 <ul>
-  {{#each category in model}}
     <li>{{#link-to 'category' category}}{{category.name}}{{/link-to}}</li>
-  {{/each}}
 </ul>
-
+{{/each}}
 {{#link-to 'new-category' classNames="btn btn-primary"}}New Category{{/link-to}}
+{{outlet}}

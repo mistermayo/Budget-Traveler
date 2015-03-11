@@ -11,7 +11,8 @@
 
     </form>
   </div>
-
+<br>
+<br>
 <div class="button-div">
   <button class="btn btn-success" {{action 'save'}}>Save</button>
 </div>
@@ -24,20 +25,18 @@
   <button class="btn btn-sm btn-danger" {{action 'delete'}}>Delete Category</button>
 
 {{/if}}
-
-<div>
+<!-- <div>
   <br />
-  {{#link-to 'categories' classNames="btn btn-warning"}}See list of Categories{{/link-to}}
-</div>
+  {{#link-to 'countries' class="btn btn-success"}}Go back to Countries{{/link-to}}
+</div> -->
 
 
-  <h2>Budget spots in this category</h2>
+  <h2>Budget Spots</h2>
     {{#each item in items itemController="item"}}
     <ul id="item">
       {{#link-to 'item' item}}
         <div id="name">
-        name: {{item.name}}<br />
-        ${{item.cost}}
+          {{item.name}}<br />
         </div>
       {{/link-to}}
     </ul>
