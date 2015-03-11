@@ -33,7 +33,8 @@ h1 {
 }
 
 h2, h3, h4 {
-  color: #F166EF;
+  color: #black;
+  font-style: bold;
 }
 
 .container-fluid
@@ -49,4 +50,13 @@ h2, h3, h4 {
 }
 ul #item, #name {
   color: black;
+}
+
+.btn:hover {
+  background:#B0487D;
+}
+
+.btn {
+  background: #D074A3;
+  margin: 15px;
 }
