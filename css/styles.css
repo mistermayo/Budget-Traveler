@@ -81,3 +81,30 @@ margin: 0 auto;
   width: 600px;
   margin: 0 auto;
 }
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+ .carousel-caption {
+    z-index: 10;
+}
+/*.storypane img {
+  width:100%;
+  height:relative;
+}
+
+.storyphoto{
+  width:100%;
+}
+
+.carousel img {
+  width:100%;
+}
+.carousel div {
+  text-align:center;
+}
+
+.carousel .btn{
+  margin-top: 100%;
+}*/
