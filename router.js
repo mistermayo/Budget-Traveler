@@ -10,4 +10,6 @@ Budget.Router.map(function() {
     this.resource('new-category');
     this.resource('item', {path: ':item_id'});
     this.resource('about');
+    this.resource('contact');
+
 });
