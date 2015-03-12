@@ -20,6 +20,7 @@
 {{else}}
 
   <p>{{name}}</p>
+      <img {{bind-attr src="image"}}>
 
   <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
   <button class="btn btn-sm btn-danger" {{action 'delete'}}>Delete Country</button>
@@ -35,4 +36,4 @@
 
 
 {{#link-to 'new-category' classNames="btn btn-primary"}}New Category{{/link-to}}
-{{outlet}}  
+{{outlet}}

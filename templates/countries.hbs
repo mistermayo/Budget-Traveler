@@ -2,7 +2,10 @@
 
 <ul>
   {{#each country in model}}
-    <li>{{#link-to 'country' country}}{{country.name}}{{/link-to}}</li>
+    <li>{{#link-to 'country' country}}
+        {{country.name}}
+        {{/link-to}}
+    </li>
   {{/each}}
 </ul>
 
