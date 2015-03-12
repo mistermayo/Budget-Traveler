@@ -3,16 +3,9 @@
 {{#if isEditing}}
   <div class="form-div">
     <form>
-
-      <div class="form-control">
-        <label class for="name">Category Name</label>
         {{input value=name id="name" class="form-control"}}
-      </div>
-
     </form>
   </div>
-<br>
-<br>
 <div class="button-div">
   <button class="btn btn-success" {{action 'save'}}>Save</button>
 </div>
@@ -39,3 +32,4 @@
     {{/each}}
 
     <p>{{#link-to 'new-item' this class="btn btn-success"}}Create New budget spot{{/link-to}}</p>
+    {{#link-to 'categories' classNames="btn btn-warning"}}Go Back to Categories{{/link-to}}
