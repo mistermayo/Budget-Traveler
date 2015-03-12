@@ -25,11 +25,6 @@
   <button class="btn btn-sm btn-danger" {{action 'delete'}}>Delete Category</button>
 
 {{/if}}
-<!-- <div>
-  <br />
-  {{#link-to 'countries' class="btn btn-success"}}Go back to Countries{{/link-to}}
-</div> -->
-
 
   <h2>Budget Spots</h2>
     {{#each item in items itemController="item"}}
@@ -44,9 +39,3 @@
     {{/each}}
 
     <p>{{#link-to 'new-item' this class="btn btn-success"}}Create New budget spot{{/link-to}}</p>
-
-<div class="col-md-8">
-
-  <!-- {{outlet}} -->
-
-</div>

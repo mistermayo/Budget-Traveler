@@ -4,12 +4,22 @@
   <div class="form-group">
     <label for="name">Name</label>
     {{input value=name id="name" class="form-control" autofocus="autofocus"}}
+  </div>
+  <div class="form-group">
     <label for="cost">Cost:</label>
     {{input value=cost id="cost" class="form-control"}}
+  </div>
+  <div class="form-group">
     <label for="location">Location:</label>
     {{input value=location id="location" class="form-control"}}
+  </div>
+  <div class="form-group">
     <label for="body">Write a description:</label>
-    {{textarea value=body id="body" class="form-control" rows="5"}}
+    {{textarea value=body id="body" class="form-control" rows="2"}}
+  </div>
+  <div class="form-group">
+    <label for="image">Image:</label>
+    {{input value=image id="image" class="form-control"}}
   </div>
 
   <button class="btn btn-primary" {{action "save"}}>Save this budget spot!</button>

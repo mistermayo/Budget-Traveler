@@ -3,5 +3,6 @@ Budget.Item = DS.Model.extend({
   location: DS.attr(),
   cost: DS.attr(),
   body: DS.attr(),
+  image: DS.attr(),
   category: DS.belongsTo('category', {async: true})
 });
