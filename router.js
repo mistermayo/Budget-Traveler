@@ -1,5 +1,6 @@
 Budget.Router.map(function() {
-  this.resource('countries', {path: '/'});
+  this.resource('application', {path: '/'});
+  this.resource('countries');
   this.resource('country', {path: ':country_id'}, function() {
     this.resource('new-country');
     this.resource('new-item');
