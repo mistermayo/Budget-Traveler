@@ -1,26 +1,28 @@
-<h1><strong>Hello There!</strong></h1>
-<ul class="about">
-  <li>
-    <p>My name is Tucker Mayo and this is an Ember.js<br />
-    application that I built on March 6, 2015.</p>
-    <p>It's a traveler's site that allows the user to create<br />
-     and search budget offerings while travelling.</p>
-  </li>
-</ul>
-    {{#if isAboutShowing}}
-      <button class="btn btn-info" {{action 'hideAbout'}}>Hide photo :(</button>
+<div class="about-container">
+  <h1><strong>Hello There!</strong></h1>
+  <ul class="about">
+    <li>
+      <p>My name is Tucker Mayo and this is an Ember.js<br />
+      application that I built on March 6, 2015.</p>
+      <p>It's a traveler's site that allows the user to create<br />
+       and search budget offerings while travelling.</p>
+    </li>
+  </ul>
+      {{#if isAboutShowing}}
+        <button class="btn btn-info" {{action 'hideAbout'}}>Hide photo :(</button>
 
-      <p><img src="css/monkey.jpg"></p>
+        <p><img src="css/monkey.jpg"></p>
 
-    {{else}}
+      {{else}}
 
-      <button class="btn btn-info" {{action 'showAbout'}}>Me and Monkeys</button>
-    {{/if}}
+        <button class="btn btn-info" {{action 'showAbout'}}>Me and Monkeys</button>
+      {{/if}}
 
-<div>
-  <br />
+  <div>
+    <br />
 
-  {{#link-to 'countries' classNames="btn btn-warning"}}See list of Countries{{/link-to}}
-  {{#link-to 'application' classNames="btn btn-primary"}}Home{{/link-to}}
+    {{#link-to 'countries' classNames="btn btn-warning"}}See list of Countries{{/link-to}}
+    {{#link-to 'application' classNames="btn btn-primary"}}Home{{/link-to}}
 
+  </div>
 </div>
