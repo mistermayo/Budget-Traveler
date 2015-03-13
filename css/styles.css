@@ -81,30 +81,39 @@ margin: 0 auto;
   width: 600px;
   margin: 0 auto;
 }
+
+/*Adjusts the div for arrows and dots*/
 .carousel {
-    height: 500px;
+    height: 300px;
     margin-bottom: 60px;
 }
-/* Since positioning the image, we need to help out the caption */
- .carousel-caption {
+
+.carousel-caption {
     z-index: 10;
 }
-/*.storypane img {
-  width:100%;
-  height:relative;
+
+/*Adjusts the div for the entire carousel*/
+.carousel-inner {
+  height: 300px;
+  width: 500px;
+  margin: auto;
+  /*margin-bottom: 60px;*/
 }
 
-.storyphoto{
-  width:100%;
+/*Adjusts the images in the carousel*/
+.img-carousel {
+  position: fixed;
+  top: -100px;
+  min-width: 100%;
+  height: auto;
 }
 
-.carousel img {
-  width:100%;
+#article-image-carousel {
+  margin: 0;
+  padding: 0;
 }
-.carousel div {
-  text-align:center;
+.country-container img {
+  height: 300px;
+  width: 500px;
+  margin: auto;
 }
-
-.carousel .btn{
-  margin-top: 100%;
-}*/

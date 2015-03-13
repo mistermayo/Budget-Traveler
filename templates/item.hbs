@@ -1,14 +1,16 @@
-<img {{bind-attr src="image"}}>
-<h3> {{name}} <br />
-     ${{cost}} <br />
-     {{location}}
-</h3>
+<div class="country-container">
+  <img {{bind-attr src="image"}}>
+  <h3> {{name}} <br />
+       ${{cost}} <br />
+       {{location}}
+  </h3>
 
-  <ul>
-    <li>{{body}}</li>
-  </ul>
-<div>
-  <br />
-  <button classNames="btn btn-warning" {{action 'delete'}}>Delete spot</button>
-  {{#link-to 'category' category classNames="btn btn-warning"}}Go Back{{/link-to}}
+    <ul>
+      <li>{{body}}</li>
+    </ul>
+  <div>
+    <br />
+    <button classNames="btn btn-warning" {{action 'delete'}}>Delete spot</button>
+    {{#link-to 'category' category classNames="btn btn-warning"}}Go Back{{/link-to}}
+  </div>
 </div>

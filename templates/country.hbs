@@ -1,38 +1,40 @@
-<h2>{{name}}</h2>
+<div class="country-container">
+  <h2>{{name}}</h2>
 
-{{#if isEditing}}
-  <div class="form-div">
-    <form>
+  {{#if isEditing}}
+    <div class="form-div">
+      <form>
 
-        {{input value=name id="name" class="form-control"}}
-        <br>
-        {{input value=image id="image" class="form-control"}}
+          {{input value=name id="name" class="form-control"}}
+          <br>
+          {{input value=image id="image" class="form-control"}}
 
-    </form>
+      </form>
+    </div>
+  <br>
+  <br>
+  <div class="button-div">
+    <button class="btn btn-success" {{action 'save'}}>Save</button>
   </div>
-<br>
-<br>
-<div class="button-div">
-  <button class="btn btn-success" {{action 'save'}}>Save</button>
+
+  {{else}}
+
+    <!-- <p>{{name}}</p> -->
+        <img {{bind-attr src="image" style="float: right; margin-left: 5px; margin-bottom: 5px;"}}><br>
+
+    <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+    <button class="btn btn-sm btn-danger" {{action 'delete'}}>Delete Country</button>
+
+  {{/if}}
+
+  <div>
+    <br />
+    {{#link-to 'countries' classNames="btn btn-warning"}}See list of Countries{{/link-to}}
+  </div>
+
+  {{#link-to 'categories' class="btn btn-success"}}Check out the categories{{/link-to}}
+
+
+  {{#link-to 'new-category' classNames="btn btn-primary"}}New Category{{/link-to}}
+  {{outlet}}
 </div>
-
-{{else}}
-
-  <!-- <p>{{name}}</p> -->
-      <img {{bind-attr src="image" style="float: right; margin-left: 5px; margin-bottom: 5px;"}}><br>
-
-  <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
-  <button class="btn btn-sm btn-danger" {{action 'delete'}}>Delete Country</button>
-
-{{/if}}
-
-<div>
-  <br />
-  {{#link-to 'countries' classNames="btn btn-warning"}}See list of Countries{{/link-to}}
-</div>
-
-{{#link-to 'categories' class="btn btn-success"}}Check out the categories{{/link-to}}
-
-
-{{#link-to 'new-category' classNames="btn btn-primary"}}New Category{{/link-to}}
-{{outlet}}

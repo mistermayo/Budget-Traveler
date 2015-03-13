@@ -1,23 +1,24 @@
-<h2>{{name}}</h2>
+<div class="country-container">
+  <h2>{{name}}</h2>
 
-{{#if isEditing}}
-  <div class="form-div">
-    <form>
-        {{input value=name id="name" class="form-control"}}
-    </form>
+  {{#if isEditing}}
+    <div class="form-div">
+      <form>
+          {{input value=name id="name" class="form-control"}}
+      </form>
+    </div>
+  <div class="button-div">
+    <button class="btn btn-success" {{action 'save'}}>Save</button>
   </div>
-<div class="button-div">
-  <button class="btn btn-success" {{action 'save'}}>Save</button>
-</div>
 
-{{else}}
+  {{else}}
 
-  <p>{{name}}</p>
+    <p>{{name}}</p>
 
-  <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
-  <button class="btn btn-sm btn-danger" {{action 'delete'}}>Delete Category</button>
+    <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+    <button class="btn btn-sm btn-danger" {{action 'delete'}}>Delete Category</button>
 
-{{/if}}
+  {{/if}}
 
   <h2>Budget Spots</h2>
     {{#each item in items itemController="item"}}
@@ -33,3 +34,4 @@
 
     <p>{{#link-to 'new-item' this class="btn btn-success"}}Create New budget spot{{/link-to}}</p>
     {{#link-to 'categories' classNames="btn btn-warning"}}Go Back to Categories{{/link-to}}
+</div>

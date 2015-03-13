@@ -1,8 +1,13 @@
 Budget.Router.map(function() {
   this.resource('application', {path: '/'});
   this.resource('countries');
+  this.resource('new-country');
+
   this.resource('country', {path: ':country_id'}, function() {
-    this.resource('new-country');
+    // this.resource('categories');
+    // this.resource('category', {path: ':category_id'});
+    // this.resource('new-category');
+
     this.resource('new-item');
     this.resource('item');
   });

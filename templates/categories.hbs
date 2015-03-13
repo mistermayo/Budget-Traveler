@@ -1,10 +1,14 @@
-<h1>Categories</h1>
-{{name}}
-{{#each category in model}}
+<div class="country-container">
+  <h1>Categories</h1>
+  {{name}}
+  {{#each category in model}}
 
-<ul>
-    <li>{{#link-to 'category' category}}{{category.name}}{{/link-to}}</li>
-</ul>
-{{/each}}
-{{#link-to 'new-category' classNames="btn btn-primary"}}New Category{{/link-to}}
-{{outlet}}
+  <ul>
+      <li>{{#link-to 'category' category}}{{category.name}}{{/link-to}}</li>
+  </ul>
+  {{/each}}
+  {{#link-to 'new-category' classNames="btn btn-primary"}}New Category{{/link-to}}
+  {{#link-to 'countries' classNames="btn btn-warning"}}See list of Countries{{/link-to}}
+
+  {{outlet}}
+</div>
